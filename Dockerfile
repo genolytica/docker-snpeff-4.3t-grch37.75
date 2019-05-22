@@ -44,7 +44,7 @@ WORKDIR /opt/snpEff
 RUN java -jar snpEff.jar download GRCh37.75 -v
 #RUN java -jar snpEff.jar download GRCh38.86 -v
 
-ENTRYPOINT ["java","-Xmx4096m","-jar","snpEff.jar"]
+ENTRYPOINT ["java","-Xmx4096m","-jar","/opt/snpEff/snpEff.jar"]
 
 ## Usage example
 # docker run -ti --rm \
